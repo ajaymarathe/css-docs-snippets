@@ -31,5 +31,25 @@ Make responsive design with help of best css framework and media queries. as per
 }
 ```
 
+### .card-zoom
+```
+.card-zoom {
+	overflow: hidden!important;
+	border-radius: inherit
+}
+
+.card-zoom>[class*=card-img] {
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	-webkit-transform-origin: center center;
+	transform-origin: center center
+}
+
+.card:hover>.card-zoom>[class*=card-img] {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1)
+}
+```
+
 ## Best UI design reference
 - bootstrap blog - https://blog.getbootstrap.com/
